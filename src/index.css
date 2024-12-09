@@ -1,0 +1,191 @@
+:root{
+  --main-color:rgb(20, 20, 20) ;
+  --buttons-BG:black;
+  --secondary-color:rgb(85, 85, 85);
+}
+body{
+  background-color: var(--main-color);
+}
+
+img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* Header */
+.upper-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow-button{
+  width: 18px;
+  height: 18px;
+  padding:4px;
+  border-radius: 50%;
+  margin-inline: 5px;
+  color:aliceblue;
+  background-color: var(--buttons-BG);
+  cursor:pointer;
+  transition: 1s;
+}
+.arrow-button:hover{
+  background-color: var(--secondary-color);
+  color:var(--main-color)
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.left-section{
+  float:right;
+  color:white;
+  display: flex;
+}
+.button{
+  background-color: var(--buttons-BG);
+  color:white;
+  width: fit-content;
+  padding: 6px 10px;
+  margin-inline:10px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.button:hover{
+  background-color: white;
+  color:black;
+  cursor:pointer;
+}
+.lower-section{
+  display: flex;
+}
+/* Sub-Section */
+.sub-title{
+  text-align: start;
+  color:white;
+  margin-left:20px;
+}
+.container{
+  display:flex;
+  margin-bottom: 10px;
+}
+/* .Album-name{
+  color:white;
+}
+.Album-desc{
+  color:white
+} */
+.album{
+  margin-inline:20px;
+  margin-block:20px;
+  color:white;
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+.album:hover{
+  padding: 5px;
+  color:var(--main-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+.Album-header{
+  display: flex;
+  gap:1em;
+  margin-inline:2em ;
+  height: 30vh;
+  margin-bottom: 10px;
+}
+
+.right-album-section{
+  margin-block: 6vh; 
+  color:white;
+  display: block;
+}
+.Album-header span{
+  font-weight:900 ;
+}
+.Song {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 1fr; /* Define columns for content alignment */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #333; /* Background color for the song row */
+  color: #fff; /* Text color */
+  border-bottom: 1px solid #444; /* Separator between rows */
+}
+
+.Song:hover {
+  background-color: #444; /* Highlight row on hover */
+}
+
+.num-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the image and text */
+}
+
+.num-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.num-title h4 {
+  margin: 0;
+  font-size: 16px; /* Smaller font for the number */
+  color: #aaa; /* Subtle color for the number */
+}
+
+.num-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff; /* White color for the song title */
+}
+
+.Song p {
+  margin: 0;
+  font-size: 14px; /* Standard font size for album, date, and duration */
+  text-align: center; /* Center align text in columns */
+}
+.line{
+  width: 95%;
+}
+.Songs-dev {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 1fr; /* Matches the same grid as the .Song component */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #222; /* Slightly darker background for the header */
+  color: #fff; /* White text for visibility */
+  font-weight: bold; /* Emphasize the header */
+  border-bottom: 2px solid #444; /* Distinct separator between header and rows */
+  text-transform: uppercase; /* Make header text uppercase for style */
+}
+
+.num-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between # and Title */
+}
+
+.num-title p {
+  margin: 0;
+  font-size: 14px; /* Adjust font size */
+  color: #aaa; /* Subtle color for header text */
+}
+
+
+/* .song-details{
+  display: flex;
+  gap:2em
+} */
